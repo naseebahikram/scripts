@@ -91,33 +91,14 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
  
 The playbook implements the following tasks:
 
-  -  This specifies a different group of machines
+- Specify group of machines
+- Install Docker.io
+- Install Python-pip
+- Increate Virtual Memory
+- Download and Launch Elk Docker
+- Publish ports 5044, 5601, 9200
 
-  ```
-  - name: Config Elk VM with Docker
-    hosts: elk
-    become: true
-    tasks:
-  ```
-  - Install Docker.io
-  
-  ```
-  - name: docker.io 
-    apt:
-      update_cache: yes
-      name: docker.io
-      state: present
-  ```
-  - Increases virtual memory
-
-  ```
-  - name: Use more memory
-    sysctl:
-      name: vm.max_map_count
-      value: '262144'
-      state: present
-      reload: yes 
-  ```
+- [ELK.yml](https://github.com/naseebahikram/scripts/blob/main/Ansible/Elk/elk.yml)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
