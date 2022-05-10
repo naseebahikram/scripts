@@ -1,5 +1,7 @@
 ## Automated ELK Stack Deployment
+
 ---
+
 The files in this repository were used to configure the network depicted below.
 
 - [Azure Network Diagram](https://github.com/naseebahikram/scripts/blob/main/Diagrams/Elk-Diagram.jpeg)
