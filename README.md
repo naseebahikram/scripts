@@ -5,14 +5,14 @@ The files in this repository were used to configure the network depicted below.
 
 - [Azure Network Diagram](https://github.com/naseebahikram/scripts/blob/main/Diagrams/Elk-Diagram.jpeg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pi### Automated ELK Stack Deployment
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. 
 
 ---
 The files in this repository were used to configure the network depicted below.
 
 - [Azure Network Diagram](https://github.com/naseebahikram/scripts/blob/main/Diagrams/Elk-Diagram.jpeg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. 
 
   - [Docker](https://github.com/naseebahikram/scripts/tree/main/Ansible/Docker)
   - [Filebeat](https://github.com/naseebahikram/scripts/tree/main/Ansible/Filebeat)
