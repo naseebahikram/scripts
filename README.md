@@ -35,31 +35,32 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly secure, in addition to restricting access to the network.
 
-- What aspect of security do load balancers protect? 
+**- What aspect of security do load balancers protect? **
 
   - Load balancers protect against DDoS attacks. The way they do it is by shifting the attack traffice and dispersing it elsewhere. 
 
-- What is the advantage of a jump box?
+**- What is the advantage of a jump box?**
 
   - The advantage of a jump box is that you're able to access and manage devices in separate security zones. Also any tools that are used withing that box are maintained in that system. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-- What does Filebeat watch for?
+
+**- What does Filebeat watch for?**
 
   - Filebeat monitors and collects log files. It also forwards data to be indexed. 
 
-- What does Metricbeat record?
+**- What does Metricbeat record?**
 
   - Metricbeat records metrics and statistics from the system and running services. 
 
 The configuration details of each machine may be found below.
 
-|  Name     |  Function  | IP Address  | Operating System |
-| ----------| ---------- |------------ |------------------|
-| Jump Box  | Gateway    | 10.0.0.4    | Linux            |
-| Web 1     | Webserver  | 10.0.0.5    | Linux            |
-| Web 2     | Webserver  | 10.0.0.6    | Linux            |
-| Elk       | Elk Server | 10.1.0.5    | Linux            |
+|  Name     |  Function  | IP Address               | Operating System |
+| ----------| ---------- |------------              |------------------|
+| Jump Box  | Gateway    | 10.0.0.4/20.213.124.173  | Linux            |
+| Web 1     | Webserver  | 10.0.0.5/20.211.0.225    | Linux            |
+| Web 2     | Webserver  | 10.0.0.6/20.211.0.225    | Linux            |
+| Elk       | Elk Server | 10.1.0.5/20.89.43.217    | Linux            |
 
 
 ---
@@ -69,7 +70,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-  -  HOSTIP
+  -  $HOST_IP
 
 Machines within the network can only be accessed by Docker.
 
